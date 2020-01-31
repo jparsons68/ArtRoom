@@ -274,7 +274,7 @@ namespace ArtRoom
                         if (!double.IsNaN(_tr_screenPicHeightAtM0)) _tr_base = new PointD(_tr_top.X, _tr_top.Y + _tr_screenPicHeightAtM0);
                         if (_tr_base != null)
                         {
-                            _tr_bL = _intertsect(_tr_base, box1.TransVanishingPoint, _tr_tL, leftVert);
+                            _tr_bL = _intersect(_tr_base, box1.TransVanishingPoint, _tr_tL, leftVert);
 
                             double heightAtLeft = _tr_bL.Y - _tr_tL.Y;
                             double widthFromBL = heightAtLeft * settings.PicWidth / settings.PicHeight;
